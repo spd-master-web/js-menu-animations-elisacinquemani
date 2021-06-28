@@ -16,6 +16,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     gsap.to("li", {
       opacity: 1,
+      stagger: 0.6,
       duration: 0
     });
 
