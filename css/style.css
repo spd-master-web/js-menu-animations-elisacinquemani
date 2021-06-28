@@ -1,0 +1,65 @@
+:root {
+  --primary: #FF8B8B;
+  --secondary: #F9F7E8;
+  --tertiary: #61bfad;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: var(--primary);
+  color: var(--secondary);
+}
+
+h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 6em;
+  line-height: 2em;
+  text-align: center;
+}
+
+svg {
+  fill: var(--secondary);
+}
+
+.wrap {
+  display: flex;
+}
+
+
+.hamburger, .close {
+  height: 50px;
+  width: 50px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  cursor: pointer;
+  padding: 10px;
+}
+
+.close {
+  transform: translateY(-200px);
+}
+
+aside {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: calc(100vh - 200px);
+  padding: 100px 10px;
+  background: var(--secondary);
+  box-shadow: 0 20px 80px rgb(0 0 0 / 60%);
+}
+
+aside li a {
+  text-decoration: none;
+}
+
+aside li a, aside .copy {
+  color: var(--tertiary);
+}
